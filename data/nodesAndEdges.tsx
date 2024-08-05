@@ -146,7 +146,6 @@ const otherNodes: FlowViewNode[] = [
                 </p>
             ),
             isItem: true,
-            targetPosition: Position.Right,
         },
         position: { x: 800, y: -460 },
         select: SelectType.SUB_SELECT,
@@ -186,7 +185,6 @@ const feedbackNodes: FlowViewNode[] = [
 const pokemonNodes: FlowViewNode[] = pokemons.map((pokemon, index) => ({
     id: `pokemon${index + 1}`,
     label: pokemon.label,
-    targetPosition: Position.Bottom,
     position: { x: pokemon.position[0], y: pokemon.position[1] },
     data: {
         title: pokemon.title,
